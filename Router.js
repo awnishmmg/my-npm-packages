@@ -19,5 +19,10 @@ const Router = () =>  {
     return window.localStorage.getItem('hash');
 }
 
+const redirect = ( hasurl ) => {
+       window.location.hash = hashurl;
+}
+
 let route = Router();
-export {route};
+export {route,redirect};
+
